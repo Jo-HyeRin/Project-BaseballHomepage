@@ -12,6 +12,6 @@ public class Player {
 	private String name;
 	private String position;
 	private Integer teamId;
-	private boolean isBan;
+	private boolean isOuter;
 	private Timestamp createdAt;
 }
