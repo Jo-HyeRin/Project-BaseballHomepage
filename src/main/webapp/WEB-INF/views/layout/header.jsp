@@ -14,7 +14,7 @@
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/boards">Baseball Management System</a>
+			<a class="navbar-brand" href="/stadium">Baseball Management System</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
@@ -22,12 +22,12 @@
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
 
-							<li class="nav-item"><a class="nav-link" href="">경기장보기&삭제</a></li>
-							<li class="nav-item"><a class="nav-link" href="">경기장등록</a></li>
-							<li class="nav-item"><a class="nav-link" href="">팀목록보기&삭제</a></li>
-							<li class="nav-item"><a class="nav-link" href="">팀등록</a></li>
-							<li class="nav-item"><a class="nav-link" href="">선수목록보기&삭제</a></li>
-							<li class="nav-item"><a class="nav-link" href="">선수등록</a></li>
+							<li class="nav-item"><a class="nav-link" href="/stadium">경기장보기&삭제</a></li>
+							<li class="nav-item"><a class="nav-link" href="/stadiumForm">경기장등록</a></li>
+							<li class="nav-item"><a class="nav-link" href="/team">팀목록보기&삭제</a></li>
+							<li class="nav-item"><a class="nav-link" href="/teamForm">팀등록</a></li>
+							<li class="nav-item"><a class="nav-link" href="/player">선수목록보기&삭제</a></li>
+							<li class="nav-item"><a class="nav-link" href="/playerForm">선수등록</a></li>
 							<li class="nav-item"><a class="nav-link" href="">포지션별야구선수보기</a></li>
 							<li class="nav-item"><a class="nav-link" href="">퇴출선수목록</a></li>
 							<li class="nav-item"><a class="nav-link" href="">퇴출선수등록</a></li>
