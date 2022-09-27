@@ -43,6 +43,5 @@ public class PlayerController {
 		playerService.선수등록(playerInsertReqDto);
 		return new CMRespDto<>(1, "선수등록성공", null);
 	}
-
 	
 }

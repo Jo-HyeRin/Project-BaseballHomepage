@@ -13,8 +13,9 @@
 
 	<select id="findAll"
 		resultType="site.metacoding.baseball.domain.player.Player">
-		SELECT p.id, t.name teamName, POSITION, ROW_NUMBER() over(ORDER BY id asc)
-		AS NO, p.NAME, p.created_at
+		SELECT p.id, ROW_NUMBER() over(ORDER BY p.id asc)
+		AS NO,
+		t.name as team_name, p.position, p.name, p.created_at
 		FROM player p
 		INNER JOIN team t
 		ON p.team_id = t.id

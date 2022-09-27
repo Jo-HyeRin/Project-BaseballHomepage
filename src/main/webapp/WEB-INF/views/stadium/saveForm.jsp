@@ -33,7 +33,7 @@
 			if(res.code == 1){
 				location.href="/stadium";
 			}else{
-				alert("경기장등록에 실패하였습니다.");
+				alert("경기장 등록에 실패하였습니다.");
 			}
 		});
 	}

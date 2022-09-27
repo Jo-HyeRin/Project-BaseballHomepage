@@ -18,7 +18,7 @@
 		<div class="mb-3 mt-3">
 			<input id="position" type="text" class="form-control" placeholder="Enter position">
 		</div>
-		<button id="btnInsert" type="button" class="btn btn-primary">팀등록완료</button>
+		<button id="btnInsert" type="button" class="btn btn-primary">선수등록완료</button>
 	</form>
 </div>
 
