@@ -14,4 +14,7 @@ public class Player {
 	private Integer teamId;
 	private boolean isOuter;
 	private Timestamp createdAt;
+	
+	private Integer no;
+	private String teamName;
 }
