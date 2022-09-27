@@ -19,9 +19,9 @@ import site.metacoding.baseball.web.dto.stadium.StadiumInsertReqDto;
 @Controller
 public class StadiumController {
 	
-	private final StadiumService stadiumService;
+	private final StadiumService stadiumService;	
 
-	@GetMapping("/stadium")
+	@GetMapping({"/", "/stadium"})
 	public String list(Model model) {
 		
 		List<Stadium> stadiumList = stadiumService.목록보기();
