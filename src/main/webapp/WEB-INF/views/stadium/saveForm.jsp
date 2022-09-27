@@ -24,7 +24,7 @@
 		
 		$.ajax("/stadium",{
 			type: "POST",
-			dataType: "json", // 디폴트값 : json일거야!
+			dataType: "json",
 			data: JSON.stringify(data),
 			headers: {
 				"Content-Type": "application/json; charset=utf-8"
