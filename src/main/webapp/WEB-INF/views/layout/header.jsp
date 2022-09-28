@@ -28,7 +28,7 @@
 							<li class="nav-item"><a class="nav-link" href="/teamForm">팀등록</a></li>
 							<li class="nav-item"><a class="nav-link" href="/player">선수목록보기&삭제</a></li>
 							<li class="nav-item"><a class="nav-link" href="/playerForm">선수등록</a></li>
-							<li class="nav-item"><a class="nav-link" href="">포지션별야구선수보기</a></li>
+							<li class="nav-item"><a class="nav-link" href="/player/position">포지션별야구선수보기</a></li>
 							<li class="nav-item"><a class="nav-link" href="">퇴출선수목록</a></li>
 							<li class="nav-item"><a class="nav-link" href="">퇴출선수등록</a></li>
 

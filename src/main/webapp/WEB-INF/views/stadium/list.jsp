@@ -20,13 +20,31 @@
 				<td>${stadium.no}</td>
 				<td>${stadium.name}</td>
 				<td>${stadium.createdAt}</td>
-				<td><button class="btn btn-danger">삭제</button></td>
+				<td><button onclick="deleteById(${stadium.id});" class="btn btn-danger">삭제</button></td>
 			</tr>
 		</c:forEach>
 		</tbody>
 	</table>
 
 </div>
+
+<script>
+
+	function deleteById(id){		
+		$.ajax("/stadium/"+id,{
+			type: "delete",
+			dataType: "json"
+		}).done((res)=>{
+			if(res.code == 1){
+				alert("삭제되었습니다.");
+				location.reload();
+			}else{
+				alert("삭제에 실패하였습니다.");
+			}
+		});		
+	}
+	
+</script>
 
 <%@ include file="../layout/footer.jsp"%>
 

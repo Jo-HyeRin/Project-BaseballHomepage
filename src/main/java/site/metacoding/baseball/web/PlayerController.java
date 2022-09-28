@@ -1,6 +1,7 @@
 package site.metacoding.baseball.web;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import lombok.RequiredArgsConstructor;
 import site.metacoding.baseball.domain.player.Player;
+import site.metacoding.baseball.domain.player.PlayerDao;
 import site.metacoding.baseball.domain.team.Team;
 import site.metacoding.baseball.service.PlayerService;
 import site.metacoding.baseball.service.TeamService;
@@ -23,6 +25,8 @@ public class PlayerController {
 	
 	private final PlayerService playerService;
 	private final TeamService teamService;
+	
+	private final PlayerDao playerDao;
 	
 	@GetMapping("/player")
 	public String list(Model model) { // 서비스한테 의존해야한다. 		
@@ -44,4 +48,9 @@ public class PlayerController {
 		return new CMRespDto<>(1, "선수등록성공", null);
 	}
 	
+	@GetMapping("/player/position")
+	public String positionList() { 		
+		return "player/positionList";
+	}
+			
 }

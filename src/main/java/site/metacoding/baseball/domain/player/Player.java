@@ -17,5 +17,5 @@ public class Player {
 	
 	// 엔티티가 아닌 필드(Transient: 일시적 데이터)
 	private Integer no;
-	private String teamName;
+	private String teamName;	
 }

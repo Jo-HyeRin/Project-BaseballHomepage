@@ -24,8 +24,8 @@
 
 	</insert>
 
-	<insert id="deleteById">
-
-	</insert>
+	<delete id="deleteById">
+		delete from stadium where id=#{id}
+	</delete>
 
 </mapper>

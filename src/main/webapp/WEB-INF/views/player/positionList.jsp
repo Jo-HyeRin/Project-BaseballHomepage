@@ -8,16 +8,20 @@
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th>번호</th>
-				<th>컬럼1</th>
-				<th>컬럼2</th>
+				<th>포지션</th>
+				<th>1루수</th>
+				<th>외야수</th>
+				<th>투수</th>
+				<!-- for문돌려야함 -->
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
+		<!-- for문돌려야함 -->
+			<tr>			
+				<td>ㅇㅇ</td>
 				<td>1</td>
-				<td>내용1</td>
-				<td>내용2</td>
+				<td>2</td>
+				<td>3</td>
 			</tr>
 		</tbody>
 	</table>

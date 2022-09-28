@@ -1,6 +1,9 @@
 package site.metacoding.baseball.domain.player;
 
 import java.util.List;
+import java.util.Map;
+
+import org.apache.ibatis.annotations.Param;
 
 public interface PlayerDao { 
 	public List<Player> findAll();
@@ -8,4 +11,8 @@ public interface PlayerDao {
 	public void insert(Player player);
 	public void update(Integer id, Player player);
 	public void deleteById(Integer id);
+	
+	// 포지션별야구선수 페이지 구현
+	public List<String> findTeam();
+	public List<Map<String, Object>> findPositionByTeam(@Param("teamNameList") List<String> teamNameList);
 }

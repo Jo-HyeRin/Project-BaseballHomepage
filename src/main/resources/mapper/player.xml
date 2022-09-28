@@ -21,6 +21,21 @@
 		ON p.team_id = t.id
 	</select>
 
+	<select id="findTeam" resultType="String">
+		SELECT distinct name from team
+	</select>
+
+	<select id="findPositionByTeam" resultType="map">		
+		SELECT 
+		<foreach item="teamName" collection="teamNameList">
+			if(t.name = #{teamName}, p.name, NULL) AS #{teamName},
+		</foreach>		
+		p.position
+		FROM player p
+		INNER JOIN team t
+		ON p.team_id = t.id
+	</select>
+
 	<select id="findById"
 		resultType="site.metacoding.baseball.domain.player.Player">
 

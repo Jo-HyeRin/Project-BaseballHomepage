@@ -18,7 +18,7 @@ public class PlayerService {
 	public List<Player> 목록보기(){
 		return playerDao.findAll();
 	}
-
+	
 	public void 선수등록(PlayerInsertReqDto playerInsertReqDto) {
 		playerDao.insert(playerInsertReqDto.toEntity());
 	}
